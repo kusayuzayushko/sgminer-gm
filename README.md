@@ -299,6 +299,12 @@ idle and makes no attempt to move otherwise.
 This strategy moves at user-defined intervals from one active pool to the next,
 skipping pools that are idle.
 
+### No retry
+
+This strategy quit program itself when pool connection is not established or disconnected during mining.
+It is intended for multi-algo switching, should be not used for normal mining.
+
+
 #### Load balance
 
 This strategy sends work to all the pools on a quota basis. By default, all
